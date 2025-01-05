@@ -1,0 +1,27 @@
+<div class="widget_settings_block">
+	<head>
+		<link rel="stylesheet" href="{% static '../styles.css' %}">
+	</head>
+	<div class="widget_settings_block__item">
+	  <div class="widget_settings_block__title">{{ settings.name }}</div>
+	  <input type="text" class="widget_settings_block__input" name="name" placeholder="{{ settings.name }}">
+	</div>
+	<div class="widget_settings_block__item">
+	  <div class="widget_settings_block__title">{{ settings.webhook_url }}</div>
+	  <input type="text" class="widget_settings_block__input" name="webhook_url">
+	</div>
+	<div class="widget_settings_block__item">
+	  <div class="widget_settings_block__title">{{ settings.requestBody }}</div>
+	  <div class="request_body">
+      <div class="request_body__item">
+        <input type="text" class="request_body__key" placeholder="{{ settings.key }}">
+        <input type="text" class="request_body__value" placeholder="{{ settings.value }}">
+        <button type="button" class="remove_field">{{ settings.remove_field }}</button>
+      </div>
+	  </div>
+	  <button type="button" class="add_field_button">{{ settings.add_field_button }}</button>
+	</div>
+	<div class="widget_settings_block__item">
+	  <button class="button-input_blue button-input_save js-widget-save">{{ settings.button_title }}</button>
+	</div>
+</div>
