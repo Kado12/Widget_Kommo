@@ -1,0 +1,56 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "version": "1.0.0",
+    "interface_version": 2,
+    "init_once": false,
+    "locale": [
+      "en",
+      "es"
+    ],
+    "installation": true,
+    "support": {
+      "link": "https://www.kommo.com",
+      "email": "support@kommo.com"
+    }
+  },
+  "locations": [
+    "salesbot_designer"
+  ],
+  "salesbot_designer": {
+    "handler_code": {
+      "name": "salesbot.handler_name",
+      "settings": {
+        "msj_client": {
+          "name": "salesbot.msj_client",
+          "type": "text",
+          "manual": true
+        },
+        "thread_id": {
+          "name": "salesbot.thread_id",
+          "type": "text",
+          "manual": true
+        },
+        "name_client": {
+          "name": "salesbot.name_client",
+          "type": "text",
+          "manual": true
+        },
+        "lead_id": {
+          "name": "salesbot.lead_id",
+          "type": "text",
+          "manual": true
+        }
+      }
+    }
+  },
+  "settings": {
+    "name_enterprise": {
+      "name": "settings.name_enterprise",
+      "type": "text",
+      "required": true
+    }
+  }
+}

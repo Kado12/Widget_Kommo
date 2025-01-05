@@ -1,0 +1,24 @@
+{
+  "widget": {
+    "name": "IA Widget By: Holos",
+    "description": "Widget to assist customers with the OpenAI API",
+    "short_description": "Customer support widget with AI",
+    "tour_description": "Follow the steps to configure the Widget settings"
+  },
+  "settings": {
+    "name_enterprise": "Nombre de tu Compañía o Empresa",
+    "msj_client": "Field Message Client",
+    "name_client": "Field Name Client",
+    "thread_id": "Field Thread ID",
+    "lead_id": "Field Lead ID"
+  },
+  "salesbot": {
+    "handler_name": "IA Widget By: Holos",
+    "msj_client": "msj_client",
+    "name_client": "name_client",
+    "thread_id": "thread_id",
+    "lead_id": "lead_id",
+    "success_callback_title": "Success",
+    "fail_callback_title": "Failed"
+  }
+}

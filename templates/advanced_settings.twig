@@ -1,27 +1,27 @@
-<div class="widget_settings_block">
+<div class="widget-settings-block">
 	<head>
 		<link rel="stylesheet" href="{% static '../styles.css' %}">
 	</head>
-	<div class="widget_settings_block__item">
-	  <div class="widget_settings_block__title">{{ settings.name }}</div>
-	  <input type="text" class="widget_settings_block__input" name="name" placeholder="{{ settings.name }}">
+	<div class="widget-settings-block__item">
+	  <div class="widget-settings-block__title">{{ settings.name }}</div>
+	  <input type="text" class="widget-settings-block__input" name="name" placeholder="{{ settings.name }}">
 	</div>
-	<div class="widget_settings_block__item">
-	  <div class="widget_settings_block__title">{{ settings.webhook_url }}</div>
-	  <input type="text" class="widget_settings_block__input" name="webhook_url">
+	<div class="widget-settings-block__item">
+	  <div class="widget-settings-block__title">{{ settings.webhook_url }}</div>
+	  <input type="text" class="widget-settings-block__input" name="webhook_url">
 	</div>
-	<div class="widget_settings_block__item">
-	  <div class="widget_settings_block__title">{{ settings.requestBody }}</div>
-	  <div class="request_body">
-      <div class="request_body__item">
-        <input type="text" class="request_body__key" placeholder="{{ settings.key }}">
-        <input type="text" class="request_body__value" placeholder="{{ settings.value }}">
-        <button type="button" class="remove_field">{{ settings.remove_field }}</button>
-      </div>
+	<div class="widget-settings-block__item">
+	  <div class="widget-settings-block__title">{{ settings.requestBody }}</div>
+	  <div class="request-body">
+	  <div class="request-body__item">
+		<input type="text" class="request-body__key" placeholder="{{ settings.key }}">
+		<input type="text" class="request-body__value" placeholder="{{ settings.value }}">
+		<button type="button" class="remove-field">{{ settings.remove_field }}</button>
 	  </div>
-	  <button type="button" class="add_field_button">{{ settings.add_field_button }}</button>
+	  </div>
+	  <button type="button" class="add-field-button">{{ settings.add_field_button }}</button>
 	</div>
-	<div class="widget_settings_block__item">
-	  <button class="button-input_blue button-input_save js-widget-save">{{ settings.button_title }}</button>
+	<div class="widget-settings-block__item">
+	  <button class="button-input-blue button-input-save js-widget-save">{{ settings.button_title }}</button>
 	</div>
 </div>
